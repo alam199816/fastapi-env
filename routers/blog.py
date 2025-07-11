@@ -2,7 +2,7 @@ from typing import List
 from fastapi import APIRouter, Depends, status, HTTPException
 import schemas, database, models, oauth2
 from sqlalchemy.orm import Session
-from ..repository import blog
+from repository import blog
 
 
 get_db = database.get_db
