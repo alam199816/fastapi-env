@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter, Depends, status, HTTPException
-from .. import schemas, database, models
+import schemas, database, models
 from sqlalchemy.orm import Session
-from ..hashing import Hash
-from ..repository import blog
+from hashing import Hash
+from repository import blog
 
 def create(request: schemas.User, db:Session):
      new_user = models.User(
