@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from . import models
+import models
 from .database import engine
 from .routers import blog, user, authentication
 
